@@ -1,0 +1,82 @@
+:root{
+    --button-color:rgb(225, 203, 225);
+    --hover-color:rgb(203, 186, 203);
+    --ative-color:rgb(160, 141, 160);
+    --back-color:rgb(156, 116, 156);
+    --bg-color:rgb(232, 223, 223);
+}
+html,body{
+    height:100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-color);
+}
+.container{
+background-color: white;
+border-radius: 2rem;
+width: 360px;
+height:400px ;
+overflow:hidden
+}
+.banner{
+  width:100%;
+  height: 100px;
+  background: var(--back-color);
+  display: flex;
+  justify-content: center;
+}
+.profile{
+   background-image: url(images/2.jpg);
+   background-repeat: no-repeat;
+   width: 8em;
+    height: 8em;
+    background-size: cover;
+    border-radius: 50%;
+    transform: translateY(40%);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+   
+}
+.profile:hover{
+   
+    width:9em;
+    height: 9em;
+    transform:translateY(33%);
+}
+.name{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-top:100px ;
+}
+.btn{
+    display: flex;
+    padding: 0 2rem;
+    justify-content: center;
+}
+.Follow{
+    outline: none;
+    border:0;
+    background:var(--button-color);
+    width: 20em;
+    border-radius: 50px;
+    height:3em
+
+}
+.Follow:hover{
+    background: var(--hover-color);
+    transition: 0.4s;
+}
+.Follow:active
+{
+    background:var(--ative-color);
+    transition: 0.1s;
+}
+.comment{
+    padding: 1em 2em 1em 2em;
+    text-align: center;
+    font-size: 11px;
+}
