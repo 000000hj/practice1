@@ -1,0 +1,47 @@
+:root{}
+body,html{height:100%; margin: 0;}
+body{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.container{
+   display: flex;
+   transform:translateY(-100%) ;
+   align-items: center;
+}
+.saleImg{
+    background-image:url(images/sale.jpg) ;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 0.3s;
+}
+
+form{display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;}
+input{
+    margin-bottom:10px;
+    
+   
+}
+
+label.discount{
+    padding-left: 20px;
+}
+#btn{
+    width:150px;
+    margin-top: 5px;
+}
+#comment{
+    
+    font-size: 13px;
+    
+   
+}
