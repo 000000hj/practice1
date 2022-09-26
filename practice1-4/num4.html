@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+:root{text-align: center;}
+</style>
+<body>
+    <div id="title"></div>
+    <div id="pr"></div>
+    <script>
+        var title=document.querySelector("#title");
+        var pr=document.querySelector('#pr');
+        var count=0;
+       title.innerHTML="<p><strong>3의 배수 찾기</strong></p>";
+       for( i=0;i<=100;i++)
+       {
+        if(i%3==0&&i/3!=0)
+         {document.write(i+","); count++;}  
+       }
+       document.write("<p>3의 배수의 갯수:"+count+"</p>");
+    </script>
+</body>
+</html>
