@@ -15,15 +15,62 @@
         </p>
     </div>
     
-    <div class="bar"></div>
+    <div class="bar">
+    </div>
+    <div class="day2">
+        <ul>
+            <li class="item-title">100일</li>
+            <li class="item-date" id="date100"></li>
+        </ul>
+        <ul>
+            <li class="item-title">200일</li>
+            <li class="item-date" id="date200"></li>
+        </ul>
+        <ul>
+            <li class="item-title">1년</li>
+            <li class="item-date" id="date365"></li>
+        </ul>
+        <ul>
+            <li class="item-title">500일</li>
+            <li class="item-date" id="date500"></li>
+        </ul>
+    </div>
     <script>
-        var now=new Date();
+        var now=new Date();//오늘 날짜를 밀리초로
         var firstDay=new Date("2022-09=27");
-        var toFirst=firstDay.getTime(); 
-        var toNow=now.getTime();
-        var passedTime=toNow-toFirst;
+        var toFirst=firstDay.getTime(); //처음 만난 날을 밀리초로
+        var toNow=now.getTime(); 
+        var passedTime=toNow-toFirst;//오늘-처음만난날
+        var future=toFirst+100*(1000*60*60*24);
+        var someday=new Date(future);
+
+        var year=someday.getFullYear();
+        var month=someday.getMonth()+1;
+        var date=someday.getDate();
+
+        document.querySelector("#date100").innerText=year+"년"+month+"월"+date+"일";
 
         var passedDay=Math.round(passedTime/(1000*60*60*24));
+        document.querySelector("#accent").innerText=passedDay+"일";
+        
+        future=toFirst+200*(1000*60*60*24);
+        someday=new Date(future);
+        year=someday.getFullYear();
+        month=someday.getMonth()+1;
+        date=someday.getDate();
+        document.querySelector('#date200').innerText=year+"년"+month+"월"+date+"일";
+
+        calcDate(365);
+        calcDate(500);
+
+        function calcDate(days){
+         var future=toFirst+days*(1000*60*60*24);
+         someday=new Date(future);
+         year=someday.getFullYear();
+        month=someday.getMonth()+1;
+        date=someday.getDate();
+        document.querySelector('#date'+days).innerText=year+"년"+month+"월"+date+"일"; 
+        }
     </script>
 </body>
 </html>
