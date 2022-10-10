@@ -1,0 +1,9 @@
+.close{
+   
+    background-color: beige;
+    cursor: pointer;
+  
+}
+.close:hover{
+    background-color: blanchedalmond;
+}

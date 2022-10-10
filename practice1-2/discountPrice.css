@@ -17,7 +17,7 @@ align-items: center;
     height: 100px;
     background-repeat: no-repeat;
     background-size: contain;
-    transition: 0.3s;
+   
 }
 
 form{display: flex;
@@ -36,8 +36,11 @@ label.discount{
     padding-left: 20px;
 }
 #btn{
+    
     width:150px;
     margin-top: 5px;
+    transition:0.7s;
+    background-color: aqua;
 }
 #comment{
     
@@ -45,3 +48,4 @@ label.discount{
     
    
 }
+#btn:hover{background-color: blueviolet;}
