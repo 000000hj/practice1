@@ -1,0 +1,6 @@
+html,body{ width: 100%;margin: 0; }
+body{display: flex; align-items: center; justify-content: center;}
+ul{list-style:none; font-size: 22px; }
+li{margin-bottom:10px;}
+.check{color: rgb(225, 225, 225);margin-right:20px ;}
+.check:hover{color: black;}
