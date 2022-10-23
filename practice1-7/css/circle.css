@@ -1,0 +1,23 @@
+body{ display: flex;justify-content: center;}
+#container{
+    margin: 0 auto;
+    width: 320px;
+}
+.circle{
+    text-indent: 20px;
+}
+.circle,span{
+   
+    border: 2px solid black;
+    border-radius: 10px;
+}
+#r,span{ width: 210px;
+    height: 40px;}
+span{margin-left:10px; padding:10px 20px 10px 20px; background-color: rgba(235, 235, 235, 0.813); }
+
+#circum ,#area{
+width:320px;
+height:40px;
+border-radius: 10px;
+}
+span:hover{ background-color: rgb(207, 207, 207);}
